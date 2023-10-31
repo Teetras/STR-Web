@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Employees>
+    <Employee id="1">
+        <name>ilya</name>
+        <gender>male</gender>
+        <age>20</age>
+        <role>boss</role>
+    </Employee>
+</Employees>
