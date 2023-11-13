@@ -37,7 +37,7 @@ public class TestExample {
             File outFile = new File(XML_FILE);
             m.marshal(dept, outFile);
             System.err.println("Write to file: " + outFile.getAbsolutePath());
-            // (2) Unmarshaller : Read XML content to Java Object.
+// (2) Unmarshaller : Read XML content to Java Object.
             Unmarshaller um = context.createUnmarshaller();
 // XML file create before.
             Department deptFromFile1 = (Department) um.unmarshal(new

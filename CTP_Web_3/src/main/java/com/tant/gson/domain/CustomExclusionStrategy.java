@@ -15,11 +15,11 @@ public class CustomExclusionStrategy implements ExclusionStrategy {
 
     @Override
     public boolean shouldSkipField(FieldAttributes f) {
-// if field name &#39;salary`, skip
+
         if ("salary".equals(f.getName())) {
             return true;
         }
-// if found @ExcludeField, skip
+
         if (f.getAnnotation(ExcludeField.class) != null) {
             return true;
         }
