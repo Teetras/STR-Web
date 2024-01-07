@@ -1,16 +1,26 @@
 package com.company.part2.start;
 
+import com.company.part1.Connection.JDBC;
 import com.company.part2.action.StudentAction;
 import com.company.part2.model.Student;
 
 import java.math.BigDecimal;
-import java.sql.*;
+import java.sql.Date;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class MainClass {
+
     StudentAction action = new StudentAction();
 
     public static void main(String[] args) {
+        try {
+            JDBC.connect();
+            JDBC.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         String DbOperation = "EXIT(0), ADD(1), UPDATE(2), DELETE(3), FETCHBYID(4), FETCHBYEMAIL(5), FETCHBYMOBNO(6), FETCHBYNAME(7),"
                 + "FETCHBYCITY(8), FETCHBYSALRANGE(9), FETCHBYDOB(10), FETCHBYDOJRANGE(11), FETCHALL(12)";
 

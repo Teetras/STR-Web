@@ -1,9 +1,9 @@
 package com.company.part1.TestOfTables;
 
 import com.company.part1.Connection.JDBC;
-
-import java.sql.*;
-import java.util.*;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
 
 public class CreateTables {
     public static void main(String[] args) {

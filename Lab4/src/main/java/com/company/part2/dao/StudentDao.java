@@ -1,13 +1,11 @@
 package com.company.part2.dao;
 
+import com.company.part2.model.Student;
+
+import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.company.part2.model.Student;
-import com.mysql.cj.jdbc.*;
-
-import java.math.BigDecimal;
 
 public class StudentDao {
     Connection con = null;
